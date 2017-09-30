@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 
   /**
-   * Controls the different versions of  the menu in blog post articles 
+   * Controls the different versions of  the menu in blog post articles
    * for Desktop, tablet and mobile.
    */
   if ($(".post").length) {
@@ -91,7 +91,7 @@ $(document).ready(function() {
         $("#toc-footer").hide();
         $("#share-footer").hide();
 
-        // show a "navigation" icon when close to the top of the page, 
+        // show a "navigation" icon when close to the top of the page,
         // otherwise show a "scroll to the top" icon
         if (topDistance < 50) {
           $("#actions-footer > ul > #top").hide();
@@ -103,4 +103,9 @@ $(document).ready(function() {
       });
     }
   }
+
+
+  // twemoji DOM parsing
+  twemoji.parse(document.body);
+
 });
